@@ -1,0 +1,6 @@
+
+<%= form_for @board, :url => boards_path do |board| %>
+    <%= board.label :name, "Name" %>
+    <%= board.text_field :name %>
+    <%= board.submit "Create" %>
+<% end %>

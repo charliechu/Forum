@@ -1,0 +1,7 @@
+<p>
+    <%= "Subject:" + @post.subject %>
+</p>
+<p>
+    Content:<%= simple_format(@post.content) %>
+</p>
+<%= link_to("Post Home", board_posts_path(@board)) %>

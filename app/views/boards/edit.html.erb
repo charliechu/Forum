@@ -1,0 +1,7 @@
+<%= form_for @board, :url => board_path(@board), :html => {:method => :put} do |board| %>
+    <%= board.label :board, "Name" %>
+    <p>
+        <%= board.text_field :name %>
+    </p>
+    <%= board.submit "Update" %>
+<% end %>
